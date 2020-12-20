@@ -5,28 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../style/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
 <!-- ------------------------- navbar ------------------------- -->
     <nav class="navbar">
-        <div class="navbar-logo">
-            <img class="nv-logo" src="../assets/logo.png" alt="logo">
-        </div>
-        <div class="navbar-list">
-            <ul class="list-di-navbar">
-                <li class="active"><a href="#Home">Home</a></li>
-                <li><a href="#Champs">Champion Price</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#FAQ">FAQ</a></li>
-                <li><a href="#TL">Timeline</a></li>
-                <li><a href="#login">Login</a></li>
-            </ul>
+        <div class="navbar-content">
+            <div class="navbar-left">
+                <img class="nv-logo" src="../assets/logo.png" alt="logo">
+                <div class="navbar-list">
+                    <ul class="list-di-navbar">
+                        <li class="active"><a href="#Home">HOME</a></li>
+                        <li><a href="#Champs">CHAMPION PRICE</a></li>
+                        <li><a href="#About">ABOUT</a></li>
+                        <li><a href="#FAQ">FAQ</a></li>
+                        <li><a href="#TL">TIMELINE</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-right">
+                <div class="navbar-list">
+                    <span class="login-text"><a href="#">LOGIN</a></span>
+                </div>
+            </div>
         </div>
     </nav>
 <!-- ------------------------- HOME ------------------------- -->
-    <section id="Home">
-        <div class="">
-            ini homepage
+    <section class="homee" id="Home">
+        <div class="home-text">
+            <div class="text-top">
+                BNCC HACKHATHON 4.0
+            </div>
+            <div class="text-mid">
+                TRANSFORM IDEAS,
+            </div>
+            <div class="text-bot">
+                CODE YOUR SOLUTION
+            </div>
         </div>
     </section>
 <!-- ------------------- CHAMPION PRICE ------------------------- -->
@@ -53,5 +69,11 @@
             ini timeline
         </div>
     </section>
+
+
+    <div class="clock">
+        <div class="display">01:28:47 PM</div>
+    </div>
+    <script src="../js/clock.js"></script>
 </body>
 </html>
