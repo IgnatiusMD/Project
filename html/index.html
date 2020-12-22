@@ -3,36 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hackhathon 4.0</title>
     <link rel="stylesheet" href="../style/index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;900&display=swap" rel="stylesheet">
 </head>
 <body>
-<!-- ------------------------- navbar ------------------------- -->
-    <nav class="navbar">
+    <!-- ------------------------- navbar ------------------------- -->
+    <nav class="navbar" id="navbar">
         <div class="navbar-content">
             <div class="navbar-left">
                 <img class="nv-logo" src="../assets/logo.png" alt="logo">
                 <div class="navbar-list">
                     <ul class="list-di-navbar">
-                        <li class="active"><a href="#Home">HOME</a></li>
-                        <li><a href="#Champs">CHAMPION PRICE</a></li>
-                        <li><a href="#About">ABOUT</a></li>
-                        <li><a href="#FAQ">FAQ</a></li>
-                        <li><a href="#TL">TIMELINE</a></li>
+                        <div class="navtext"><li class="active"><a href="#Home">HOME</a></li></div>
+                        <div class="navtext"><li><a href="#Champs">CHAMPION PRICE</a></li></div>
+                        <div class="navtext"><li><a href="#About">ABOUT</a></li></div>
+                        <div class="navtext"><li><a href="#FAQ">FAQ</a></li></div>
+                        <div class="navtext"><li><a href="#TL">TIMELINE</a></li></div>
                     </ul>
                 </div>
             </div>
             <div class="navbar-right">
-                <div class="navbar-list">
+                <div class="navlogin">
                     <span class="login-text"><a href="#">LOGIN</a></span>
                 </div>
             </div>
         </div>
     </nav>
-<!-- ------------------------- HOME ------------------------- -->
-    <section class="homee" id="Home">
+    <!-- ------------------------- HOME ------------------------- -->
+    <section id="Home" class="homee">
         <div class="home-text">
             <div class="text-top">
                 BNCC HACKHATHON 4.0
@@ -45,35 +45,38 @@
             </div>
         </div>
     </section>
-<!-- ------------------- CHAMPION PRICE ------------------------- -->
+    <!-- ------------------- CHAMPION PRICE ------------------------- -->
     <section id="Champs">
         <div class="">
             ini Champion Price
         </div>
     </section>
-<!-- ----------------------- ABOUT ---------------------------- -->
+    <!-- ----------------------- ABOUT ---------------------------- -->
     <section id="About">
         <div class="">
             ini About
         </div>
     </section>
-<!-- ------------------------ FAQ ---------------------------- -->
+    <!-- ------------------------ FAQ ---------------------------- -->
     <section id="FAQ">
         <div class="">
             ini FAQ
         </div>
     </section>
-<!-- ---------------------- TIMELINE --------------------------- -->
-    <section id="TL">
-        <div class="">
-            ini timeline
+    <!-- ---------------------- TIMELINE --------------------------- -->
+    <section id="TL" class="timeline">
+        <div class="tl-content">
+            <div class="itung">
+                <div class="countdown">00 : 00 : 00 : 00</div>
+            </div>
+            <div class="iseng">TO DUE DATE!</div>
         </div>
     </section>
-
-
-    <div class="clock">
-        <div class="display">01:28:47 PM</div>
-    </div>
-    <script src="../js/clock.js"></script>
+    <!-- ----------------------- JS -------------------------------- -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/countdown.js"></script>
+    
 </body>
 </html>
