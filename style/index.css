@@ -86,9 +86,13 @@ body{
     display: flex;
     font-size: 96px;
     font-weight: 400;
+    /* gradient background */
+    background: -webkit-linear-gradient(orange,#F9C80E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
 /* -------- home ---------- */
+
 .timeline{
     display: flex;
     height: 100vh;
