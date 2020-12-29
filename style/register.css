@@ -140,6 +140,23 @@ input:checked + .slider::before{
     cursor: pointer;
 }
 
+
+.upfile{
+    display: flex;
+    flex-direction: column;
+}
+.inputfile{
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    border-bottom: 2px solid white;
+    font-size: 30px;
+    padding: 10px 0;
+}
+.inputfile>input{
+    display: none;
+}
+
 /* TEST DISINI INPUT ANIMATION */
 .input-data{
     display: flex;
@@ -152,8 +169,8 @@ input:checked + .slider::before{
     height: 100%;
     width: 100%;
     border: none;
-    padding-top: 20px;
-    font-size: 25px;
+    padding-top: 28px;
+    font-size: 20px;
     color: white;
     background: transparent;
     border-bottom: 2px solid white;
