@@ -156,6 +156,9 @@ input:checked + .slider::before{
 .inputfile>input{
     display: none;
 }
+#text{
+    display: none;
+}
 
 /* TEST DISINI INPUT ANIMATION */
 .input-data{

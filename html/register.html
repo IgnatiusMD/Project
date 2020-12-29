@@ -46,7 +46,7 @@
                 </div>
                 <div class="container">
                     <label class="switch">
-                        <input type="checkbox">
+                        <input type="checkbox" id="myCheck" onclick="myFunction()">
                         <span class="slider"></span>
                     </label>
                     <span class="what-is binusian">BINUSIAN</span>
@@ -105,21 +105,28 @@
                     <div class="underline"></div>
                     <label class="what-is">Upload CV</label>
                 </div>
-                <div class="input-data">
-                    <input type="file" required>
-                    <div class="underline"></div>
-                    <label class="what-is">Upload Flazzcard</label>
-                </div>
                 <div class="info">
                     File must be in .pdf / .jpg / .jpeg / .png
                 </div>
-                <div class="input-data">
-                    <input type="file" required>
-                    <div class="underline"></div>
-                    <label class="what-is">Upload ID Card</label>
+                <div id="text">
+                    <div class="input-data">
+                        <input type="file" required>
+                        <div class="underline"></div>
+                        <label class="what-is">Upload Flazzcard</label>
+                    </div>
+                    <div class="info">
+                        File must be in .pdf / .jpg / .jpeg / .png
+                    </div>                 
                 </div>
-                <div class="info">
-                    File must be in .pdf / .jpg / .jpeg / .png
+                <div id="data">
+                    <div class="input-data">
+                        <input type="file" required>
+                        <div class="underline"></div>
+                        <label class="what-is">Upload ID Card</label>
+                    </div>
+                    <div class="info">
+                        File must be in .pdf / .jpg / .jpeg / .png
+                    </div>
                 </div>
 <!-- 
                 <label for="cv">
@@ -166,6 +173,7 @@
                 <button type="submit" class="btn">SUBMIT</button>
             </div>
         </form>
+        <script src="../js/ifbinus.js"></script>
     </div>
 </body>
 </html>
