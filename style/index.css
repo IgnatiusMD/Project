@@ -9,6 +9,9 @@
 body{
     background-color: rgb(27, 50, 116);
 }
+a{
+    text-decoration: none;
+}
 
 .navbar-content{
     display: flex;
@@ -37,7 +40,7 @@ body{
     display: flex;
     list-style: none;
 }
-.navbar ul li a, .login-text a{
+.navbar ul li a, .login-text{
     font-size: 18px;
     text-decoration: none;
 }
@@ -118,3 +121,15 @@ body{
     text-shadow: 0 0 7px white, 0 0 35px rgb(0, 255, 213);
 }
 /* -------- timeline ---------- */
+.champss{
+    height: 100vh;
+}
+/* ------ champion prize ------- */
+.aboutt{
+    height: 100vh;
+}
+/* --------- about ------------ */
+.faqq{
+    height: 100vh;
+}
+/* ---------- FAQ ------------- */
