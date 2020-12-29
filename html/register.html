@@ -100,17 +100,19 @@
                         <label class="what-is">Birthday</label>
                     </div>
                 </div>
-                <div class="input-data">
-                    <input type="file" id="file" onchange="return fileValidation()" required>
-                    <div class="underline"></div>
-                    <label class="what-is">Upload CV</label>
-                </div>
-                <div class="info">
-                    File must be in .pdf / .jpg / .jpeg / .png
+                <div id="cv">
+                    <div class="input-data">
+                        <input type="file" id="file" onchange="return ValidasiCV()" required>
+                        <div class="underline"></div>
+                        <label class="what-is">Upload CV</label>
+                    </div>
+                    <div class="info">
+                        File must be in .pdf / .jpg / .jpeg / .png
+                    </div>
                 </div>
                 <div id="text">
                     <div class="input-data">
-                        <input type="file" id="file" onchange="return fileValidation()" required>
+                        <input type="file" id="fc" onchange="return ValidasiFC()" required>
                         <div class="underline"></div>
                         <label class="what-is">Upload Flazzcard</label>
                     </div>
@@ -120,7 +122,7 @@
                 </div>
                 <div id="data">
                     <div class="input-data">
-                        <input type="file" id="file" onchange="return fileValidation()" required>
+                        <input type="file" id="idc" onchange="return ValidasiIDC()" required>
                         <div class="underline"></div>
                         <label class="what-is">Upload ID Card</label>
                     </div>
