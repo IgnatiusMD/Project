@@ -153,9 +153,6 @@ input:checked + .slider::before{
     font-size: 30px;
     padding: 10px 0;
 }
-.inputfile>input{
-    display: none;
-}
 #text{
     display: none;
 }
@@ -184,6 +181,7 @@ input:checked + .slider::before{
     font-size: 30px;
     color: #F9C80E;
 }
+
 .input-data label{
     position: absolute;
     bottom: 10px;
