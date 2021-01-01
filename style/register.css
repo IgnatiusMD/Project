@@ -212,3 +212,23 @@ input::-webkit-calendar-picker-indicator{
 .input-data input:valid ~ .underline::before{
     transform: scaleX(1);
 }
+
+/* ini kalo error */
+/* ini garis kotak kalo error */
+/* .underline::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #F35523;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+} */
+
+/* ini textnya yang heading itu */
+/* .input-data input:focus ~ label,
+.input-data input:valid ~ label{
+    transform: translateY(-20px);
+    font-size: 30px;
+    color: #F35523;
+} */

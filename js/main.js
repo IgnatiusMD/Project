@@ -1,4 +1,4 @@
-$('#navbar').onePageNav({
+$('#navbar').onePageNav({ // nv btn clr
 	currentClass: 'active',
 	changeHash: false,
 	scrollSpeed: 750,
@@ -7,7 +7,7 @@ $('#navbar').onePageNav({
 	easing: 'swing'
 });
 
-$('.navbar a').on('click', function(e){
+$('.navbar a').on('click', function(e){ // smooth scroll
     if(this.hash !== ' '){
         e.preventDefault();
 
