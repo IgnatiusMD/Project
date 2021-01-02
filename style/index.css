@@ -16,6 +16,11 @@ a{
 .jarak{
     margin-left: 10px;
 }
+.solid-l{
+    color: #F9C80E;
+    font-size: 72px;
+    font-weight: 900;
+}
 .polos-l, .gradient-l{
     font-size: 96px;
     font-weight: 400;
@@ -25,12 +30,21 @@ a{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.polos-ml{
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+}
 .polos-m, .solid-m{
     font-size: 36px;
     font-weight: 700;
 }
-.solid-m{
+.solid-m, .solid-ml{
     color: rgb(249, 200, 14);
+}
+.solid-ml{
+    font-size: 16px;
+    font-weight: 600;
 }
 .polos-s, .solid-s, .putih-s{
     font-size: 30px;
@@ -370,27 +384,99 @@ a{
 .timeline{
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    justify-content: center;
+    height: 110vh;
+}
+.bawahnya{
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
     align-items: center;
 }
 .tl-content{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
 }
-.itung{
+.tl-kiri{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 420px;
+    height: 520px;
+    background-image: linear-gradient(rgba(57,113,152,0), rgba(57,113,152,1));
+    border: none;
+    border-radius: 30px;
+}
+.tl-judul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    height: 20%;
+    background-color: #FFF5CF;
+    border: none;
+    border-radius: 20px;
+}
+.tl-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 48px;
+    font-weight: 600;
+    color: rgba(57,113,152,1);
+}
+.tl-tgltgl{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;
+    width: 90%;
+}
+.tl-tombol{
+    width: 30px;
+    height: 30px;
+    margin-left: 5.2%;
+    z-index: 2;
+}
+.tl-tombol:hover{
+    cursor: pointer;
+}
+.garis-penghubung1, .garis-penghubung2, .garis-penghubung3{
+    position: absolute;
+    margin-left: 2.4%;
+    width: 2px;
+    height: 125px;
+    background-color: white;
+    z-index: 1;
+}
+.garis-penghubung2{
+    margin-bottom: 15%;
+}
+.garis-penghubung3{
+    margin-top: 15%;
+}
+.tl-pertama{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.tl-namajudul{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+}
+label{
+    width: 100%;
+}
+.c, .m, .o, .cm{
+    display: none;
 }
 .countdown{
-    font-size: 100px;
-}
-.iseng{
-    display: flex;
-    justify-content: center;
-    font-size: 80px;
-    color: black;
-    text-shadow: 0 0 7px white, 0 0 35px rgb(0, 255, 213);
+    color: white;
+    font-weight: 400;
+    font-size: 92px;
 }
 /* -------- timeline ---------- */
 .faqq, .contactus{
