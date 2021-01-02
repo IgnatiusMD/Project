@@ -54,6 +54,10 @@
     <!-- ----------------------- ABOUT ---------------------------- -->
     <section id="About">
         <div class="aboutt">
+            <div class="about-kotak">
+                <img class="bgabt" src="../assets/laptop.png" alt="">
+            </div>
+
             <div class="heading">
                 <span class="polos-l">01| What is</span>
                 <span class="gradient-l jarak">Hackathon</span>
@@ -164,19 +168,64 @@
         </div>
         <div class="hadiahnyaaa">
             <div class="kotak-di-kiri">
-                <img class="icon" src="../assets/icon/1st.png" alt="">
-                <img class="icon" src="../assets/icon/2nd.png" alt="">
-                <img class="icon" src="../assets/icon/3rd.png" alt="">
+                <img class="icon satu" onClick="anis()" src="../assets/icon/1st.png" alt="">
+                <img class="icon dua" onClick="anid()" src="../assets/icon/2nd.png" alt="">
+                <img class="icon tiga" onClick="anit()" src="../assets/icon/3rd.png" alt="">
             </div>
-            <div class="kotak-di-kanan">
-                <div class="kotak-atas">
-                    <span class="bar-1">Hover to View</span>
-                    <span class="bar-2">Details</span>
+
+            <div class="kotakbaru">
+                <div class="kotak-di-kanan">
+                    <div class="kotak-atas">
+                        <span class="bar-1">Click to View</span>
+                        <span class="bar-2">Details</span>
+                    </div>
+                    <div class="kotak-bawah">
+                        <img class="hover-icon" src="../assets/icon/hover.png" alt="">
+                    </div>
                 </div>
-                <div class="kotak-bawah">
-                    <img class="hover-icon" src="../assets/icon/hover.png" alt="">
+    
+                <div class="hidden">
+                    <div class="juara-satu" id="Jsatu">
+                        <div class="kotak-atas"></div>
+                        <div class="kotak-bawah"></div>
+                        <div class="konten">
+                            <img class="gmbr-juara" src="../assets/icon/1st.png" alt="medali-1">
+                            <div class="tengahin">
+                                <div class="gar-1">Rp 4.000.000</div>
+                                <div class="gar-2">&</div>
+                                <div class="gar-3">SERTIFIKAT</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="juara-dua" id="Jdua">
+                        <div class="kotak-atas"></div>
+                        <div class="kotak-bawah"></div>
+                        <div class="konten">
+                            <img class="gmbr-juara" src="../assets/icon/2nd.png" alt="medali-2">
+                            <div class="tengahin">
+                                <div class="gar-1">Rp 2.000.000</div>
+                                <div class="gar-2">&</div>
+                                <div class="gar-3">SERTIFIKAT</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="juara-tiga" id="Jtiga">
+                        <div class="kotak-atas"></div>
+                        <div class="kotak-bawah"></div>
+                        <div class="konten">
+                            <img class="gmbr-juara" src="../assets/icon/3rd.png" alt="medali-3">
+                            <div class="tengahin">
+                                <div class="gar-1">Rp 1.000.000</div>
+                                <div class="gar-2">&</div>
+                                <div class="gar-3">SERTIFIKAT</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+
+
         </div>
     </section>
     <!-- ---------------------- TIMELINE --------------------------- -->
@@ -211,57 +260,140 @@
             </div>
         </div>
 
-        <div class="sponsor">
+
+        <div class="sponsor carousel">
             <div class="heading">
                 <span class="polos-l">06| Know Our</span>
                 <span class="gradient-l jarak">Sponsors</span>
                 <span class="polos-l">?</span>
             </div>
-            <div class="platinum">
-                <img class="bg" src="../assets/screen.png" alt="">
-                <div class="dalem-kandang">
-                    <div class="gradient-l sps">Platinum Sponsor</div>
-                    <img class="logoc" src="../assets/logo-logo/cierto.png" alt="">
-                </div>
+
+            <div class="prevnext-btn">
+                <button class="prev-btn"><img class="geseran" src="../assets/icon/prev.png" alt=""></button>
+                <button class="next-btn"><img class="geseran" src="../assets/icon/next.png" alt=""></button>
             </div>
-            <div class="gold">
-                <img class="bg" src="../assets/screen.png" alt="">
-                <div class="dalem-kandang">
-                    <div class="gradient-l sps">Gold Sponsor</div>
-                    <div class="isinyaaa">
-                        <div class="log-atas">
-                            <img class="logogold1" src="../assets/logo-logo/apple.png" alt="">
-                            <img class="logogold2" src="../assets/logo-logo/ntah.png" alt="">
-                        </div>
-                        <div class="log-bawah">
-                            <img class="logogold3" src="../assets/logo-logo/asus.png" alt="">
+            
+            <div class="slides">
+                <div class="platinum slide">
+                    <img class="bg" src="../assets/screen.png" alt="">
+                    <div class="dalem-kandang">
+                        <div class="gradient-l sps">Platinum Sponsor</div>
+                        <img class="logoc" src="../assets/logo-logo/cierto.png" alt="">
+                    </div>
+                </div>
+                <div class="gold slide">
+                    <img class="bg" src="../assets/screen.png" alt="">
+                    <div class="dalem-kandang">
+                        <div class="gradient-l sps">Gold Sponsor</div>
+                        <div class="isinyaaa">
+                            <div class="log-atas">
+                                <img class="logogold1" src="../assets/logo-logo/apple.png" alt="">
+                                <img class="logogold2" src="../assets/logo-logo/ntah.png" alt="">
+                            </div>
+                            <div class="log-bawah">
+                                <img class="logogold3" src="../assets/logo-logo/asus.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="silver">
-                <img class="bg" src="../assets/screen.png" alt="">
-                <div class="dalem-kandang">
-                    <div class="gradient-l sps">Silver Sponsor</div>
-                    <div class="isinyaaa">
-                        <div class="log-atas">
-                            <img class="logoslr1" src="../assets/logo-logo/seputar.png" alt="">
-                            <img class="logoslr2" src="../assets/logo-logo/magang.png" alt="">
-                        </div>
-                        <div class="log-bawah">
-                            <img class="logoslr3" src="../assets/logo-logo/tiket.png" alt="">
+                <div class="silver slide">
+                    <img class="bg" src="../assets/screen.png" alt="">
+                    <div class="dalem-kandang">
+                        <div class="gradient-l sps">Silver Sponsor</div>
+                        <div class="isinyaaa">
+                            <div class="log-atas">
+                                <img class="logoslr1" src="../assets/logo-logo/seputar.png" alt="">
+                                <img class="logoslr2" src="../assets/logo-logo/magang.png" alt="">
+                            </div>
+                            <div class="log-bawah">
+                                <img class="logoslr3" src="../assets/logo-logo/tiket.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="medpar">
+
+
+        <div class="medpar carouselz">
             <div class="heading">
                 <span class="polos-l">07| Our</span>
                 <span class="gradient-l jarak">Media Partners</span>
                 <span class="polos-l">!</span>
             </div>
+
+            <div class="prevnext-btn">
+                <button class="previ-btn"><img class="geseran" src="../assets/icon/prev.png" alt=""></button>
+                <button class="nextt-btn"><img class="geseran" src="../assets/icon/next.png" alt=""></button>
+            </div>
+
+            <div class="slidess">
+                <div class="media-1">
+                    <img class="bg" src="../assets/screen.png" alt="">
+                    <div class="dalem-kandang">
+                        <div class="medianya">
+                            <div class="b1">
+                                <img class="ile" src="../assets/logo-logo/infolomba.png" alt="ILE-logo">
+                                <img class="je" src="../assets/logo-logo/jadwalevent.png" alt="JE-logo">
+                                <img class="lukan" src="../assets/logo-logo/lukan.png" alt="Lu_kan-logo">
+                                <img class="info" src="../assets/logo-logo/info.png" alt="Info-logo">
+                            </div>
+                            <div class="b2">
+                                <img class="info" src="../assets/logo-logo/info.png" alt="Info-logo">
+                                <img class="lukan" src="../assets/logo-logo/lukan.png" alt="Lu_kan-logo">
+                                <img class="je" src="../assets/logo-logo/jadwalevent.png" alt="JE-logo">
+                                <img class="ile" src="../assets/logo-logo/infolomba.png" alt="ILE-logo">
+                            </div>
+                            <div class="b3">
+                                <img class="je" src="../assets/logo-logo/jadwalevent.png" alt="JE-logo">
+                                <img class="info" src="../assets/logo-logo/info.png" alt="Info-logo">
+                                <img class="ile" src="../assets/logo-logo/infolomba.png" alt="ILE-logo">
+                                <img class="lukan" src="../assets/logo-logo/lukan.png" alt="Lu_kan-logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="media-2">
+                    <img class="bg" src="../assets/screen.png" alt="">
+                    <div class="dalem-kandang">
+                        <div class="medianya">
+                            <div class="b1">
+                                <img class="bv" src="../assets/logo-logo/bvoice.png" alt="ILE-logo">
+                                <img class="je" src="../assets/logo-logo/jadwalevent.png" alt="JE-logo">
+                                <img class="lukan" src="../assets/logo-logo/lukan.png" alt="Lu_kan-logo">
+                                <img class="info" src="../assets/logo-logo/info.png" alt="Info-logo">
+                            </div>
+                            <div class="b2">
+                                <img class="je" src="../assets/logo-logo/jadwalevent.png" alt="JE-logo">
+                                <img class="lukan" src="../assets/logo-logo/lukan.png" alt="Lu_kan-logo">
+                                <img class="info" src="../assets/logo-logo/info.png" alt="Info-logo">
+                                <img class="ile" src="../assets/logo-logo/infolomba.png" alt="ILE-logo">
+                            </div>
+                            <div class="b3">
+                                <img class="info" src="../assets/logo-logo/info.png" alt="Info-logo">
+                                <img class="info" src="../assets/logo-logo/info.png" alt="Info-logo">
+                                <img class="ile" src="../assets/logo-logo/infolomba.png" alt="ILE-logo">
+                                <img class="lukan" src="../assets/logo-logo/lukan.png" alt="Lu_kan-logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="contactus">
+            <div class="kebawahh">
+                <span class="polos-l">08|</span>
+                <span class="polos-l">Any</span>
+                <div class="sejajar">
+                    <span class="gradient-l">Questions</span>
+                    <span class="polos-l jarak">?</span>
+                </div>
+            </div>
+
         </div>
     </section>
     <!-- ------ FOOTER --------- -->
@@ -299,6 +431,9 @@
     <script src="../js/main.js"></script>
     <script src="../js/countdown.js"></script>
     <script src="../js/bgcolornv.js"></script>
+    <script src="../js/sponsor.js"></script>
+    <script src="../js/hadiah.js"></script>
+    <script src="../js/medpar.js"></script>
     <!-- <script>
         $(window).scroll(function(){
             $('nav').toggleClass('scrolled',$(this).scrollTop()>50);

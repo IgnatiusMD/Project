@@ -8,6 +8,7 @@
 }
 body{
     background-color: black;
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
@@ -52,6 +53,7 @@ a{
     position: fixed;
     width: 100%;
     background-color: rgba(19, 39, 53, 0.25);
+    z-index: 5;
 }
 .nv-logo{
     height: 62px;
@@ -96,6 +98,9 @@ a{
     border-color: black;
     background-color: cornflowerblue;
     cursor: pointer;
+}
+.heading, .unknown{
+    z-index: 2;
 }
 /* ----------- navbar ---------------- */
 .homee{
@@ -186,18 +191,22 @@ a{
 }
 /* -------- home ---------- */
 .aboutt, .aboutt2{
-    height: 100vh;
+    height: 120vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding-left: 100px;
 }
-/* .backtext{
+.about-kotak{
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    z-index: 1;
+}
+.bgabt{
     position: absolute;
-    font-size: 600px;
-    color: rgba(167, 167, 167, 0.15);
-    margin-top: -20%;
-} */
+    left: 50%;
+}
 .bodynya{
     display: flex;
     flex-direction: column;
@@ -205,6 +214,7 @@ a{
 .button-reg{
     display: flex;
     align-items: center;
+    z-index: 1;
 }
 .btnreg{
     color: black;
@@ -257,6 +267,7 @@ a{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    border-radius: 10px;
 }
 .title-car{
     color: rgb(249, 200, 14);
@@ -267,6 +278,7 @@ a{
     color: rgb(19, 39, 53);
     font-size: 22px;
     font-weight: 700;
+    text-align: center;
 }
 .head-car{
     display: flex;
@@ -275,7 +287,10 @@ a{
 }
 /* --------- about ------------ */
 .champss{
-    height: 100vh;
+    height: 110vh;
+}
+.kotakbaru{
+    display: flex;
 }
 .hadiahnyaaa{
     display: flex;
@@ -287,39 +302,69 @@ a{
 .kotak-di-kiri{
     display: flex;
     flex-direction: column;
-    height: 80%;
+    height: 75%;
     justify-content: space-around;
 }
 .icon{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
+}
+.icon:hover{
+    transform: scale(1.1);
+}
+.juara-satu, .juara-dua, .juara-tiga, .tengahin, .konten{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.juara-satu, .juara-dua, .juara-tiga{
+    display: none;
+    position: absolute;
+}
+.gmbr-juara{
+    margin-bottom: 5%;
+}
+.konten{
+    position: absolute;
+}
+.gar-1, .gar-2, .gar-3{
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(19, 39, 53);
+}
+.satu:hover, .dua:hover, .tiga:hover{
+    cursor: pointer;
 }
 .kotak-bawah, .kotak-atas{
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 536px;
+    width: 375px;
 }
 .kotak-atas{
     background-color: #FFF5CF;
     border-radius: 40px 40px 0 0;
-    height: 258px;
+    height: 166px;
     flex-direction: column;
 }
 .kotak-bawah{
     background-color: #FFFFFF;
     border-radius: 0 0 40px 40px;
-    height: 458px;
+    height: 333px;
+}
+.hidden{
+    position: absolute;
 }
 .bar-1, .bar-2, .hover-icon{
-    font-size: 72px;
+    font-size: 48px;
     font-weight: 700;
     color: rgb(19, 39, 53);
 }
 .hover-icon{
-    width: 300px;
-    height: 300px;
+    width: 175px;
+    height: 175px;
 }
 /* ------ champion prize ------- */
 .timeline{
@@ -348,25 +393,54 @@ a{
     text-shadow: 0 0 7px white, 0 0 35px rgb(0, 255, 213);
 }
 /* -------- timeline ---------- */
-
-.faqq, .sponsor, .medpar{
-    height: 130vh;
+.faqq, .contactus{
+    height: 140vh;
 }
-.questions{
+.sponsor, .medpar{
+    height: 125vh;
+}
+.sponsor, .medpar{
+    width: 100%;
+    overflow: hidden;
+}
+.gold, .silver, .platinum, .media-1, .media-2{
     display: flex;
+    margin-top: 10%;
+    width: 100%;
 }
-.question-kiri, .question-kanan{
+.platinum, .media-1{
+    margin-left: 26%;
+}
+.gold{
+    margin-left: 26%;
+    margin-right: 26%;
+}
+.silver, .media-2{
+    margin-left: 26%;
+}
+.slides, .slidess{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+    overflow: hidden;
+    justify-content: flex-start;
+}
+.dalem-kandang{
+    position: absolute;
+    margin-top: 5%;
+    width: 700px;
+    height: 400px;
     display: flex;
     flex-direction: column;
-}
-.platinum, .gold, .silver{
-    display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 100%;
 }
-.platinum, .gold{
-    display: none;
+.isinyaaa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 .log-atas, .log-bawah{
     display: flex;
@@ -383,38 +457,87 @@ a{
     height: 132px;
 }
 .logogold2{
-    width: 187px;
-    height: 187px;
+    width: 127px;
+    height: 127px;
 }
 .logogold3{
-    width: 360px;
-    height: 85px;
+    width: 233px;
+    height: 55px;
 }
 .bg{
-    width: 1000px;
-    height: 800px;
+    width: 700px;
+    height: 500px;
 }
 .sps{
     font-size: 64px;
     font-weight: 700;
 }
 .logoc{
-    width: 615px;
-    height: 418px;
+    width: 415px;
+    height: 400px;
 }
-.isinyaaa{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.dalem-kandang{
+.prevnext-btn{
     position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 25%;
+    z-index: 1;
+}
+.geseran{
+    width: 80px;
+    height: 80px;
+}
+.prev-btn, .next-btn, .previ-btn, .nextt-btn{
+    width: 100px;
+    height: 100px;
+    background: none;
+    border: none;
+}
+.prev-btn, .previ-btn{
+    margin-left: 5%;
+}
+.next-btn, .nextt-btn{
+    margin-right: 5%;
+}
+.prev-btn:hover, .next-btn:hover, .previ-btn:hover, .nextt-btn:hover{
+    cursor: pointer;
+}
+.ile{
+    width: 100px;
+    height: 80px;
+}
+.je{
+    width: 110px;
+    height: 90px;
+}
+.bv{
+    width: 100px;
+    height: 60px;
+}
+.lukan, .info{
+    width: 100px;
+    height: 100px;
+}
+.medianya{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
     width: 100%;
-    height: 60%;
+    height: 80%;
+}
+.b1, .b2, .b3{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.kebawahh{
+    display: flex;
+    flex-direction: column;
+}
+.sejajar{
+    display: flex;
 }
 /* ---------- FAQ ------------- */
 .footernya{
