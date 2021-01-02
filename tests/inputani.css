@@ -81,3 +81,18 @@ body{
 .inputfile>input{
     display: none;
 }
+
+
+
+.testing_aja{
+    display: flex;
+}
+.kecil{
+    height: 150px;
+    width: 150px;
+}
+.text{
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 3%;
+}

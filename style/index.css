@@ -31,11 +31,18 @@ a{
 .solid-m{
     color: rgb(249, 200, 14);
 }
+.polos-s, .solid-s, .putih-s{
+    font-size: 30px;
+    font-weight: 700;
+}
+.solid-s{
+    color: rgb(249, 200, 14);
+}
+.polos-s{
+    color: rgba(191, 215, 234, 0.5);
+}
 
 /* ------- GENERAL ------------- */
-.scrolling-active, .bgcolor{
-    background-color: rgba(19, 39, 53, 0.25);
-}
 .navbar-content{
     display: flex;
     align-items: center;
@@ -44,6 +51,7 @@ a{
     height: 168px;
     position: fixed;
     width: 100%;
+    background-color: rgba(19, 39, 53, 0.25);
 }
 .nv-logo{
     height: 62px;
@@ -177,9 +185,146 @@ a{
     }
 }
 /* -------- home ---------- */
-
+.aboutt, .aboutt2{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 100px;
+}
+/* .backtext{
+    position: absolute;
+    font-size: 600px;
+    color: rgba(167, 167, 167, 0.15);
+    margin-top: -20%;
+} */
+.bodynya{
+    display: flex;
+    flex-direction: column;
+}
+.button-reg{
+    display: flex;
+    align-items: center;
+}
+.btnreg{
+    color: black;
+    font-size: 36px;
+    font-weight: 700;
+    height: 80px;
+    width: 397px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #F9C80E, #F39200);
+    border: none;
+}
+.btnreg:hover{
+    cursor: pointer;
+}
+.pointerline{
+    margin-left: 10px;
+    height: 5px;
+    width: 420px;
+    background-color: rgb(249, 200, 14);
+    border: none;
+}
+.download{
+    display: flex;
+    color: rgb(249, 200, 14);
+    border: solid 4px;
+    border-radius: 25px;
+    width: 267px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+.download-text{
+    font-size: 35px;
+    font-weight: 700;
+    color: rgb(249, 200, 14);
+}
+/* about1 */
+.aboutt2{
+    margin-top: 250px;
+    align-items: center;
+}
+.swiper-slide{
+    background-position: center;
+    background-size: cover;
+    width: 410px;
+    height: 588px;
+    background-color: white;
+    padding: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.title-car{
+    color: rgb(249, 200, 14);
+    font-size: 36px;
+    font-weight: 700;
+}
+.subtitle-car{
+    color: rgb(19, 39, 53);
+    font-size: 22px;
+    font-weight: 700;
+}
+.head-car{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* --------- about ------------ */
+.champss{
+    height: 100vh;
+}
+.hadiahnyaaa{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.kotak-di-kiri{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-around;
+}
+.icon{
+    width: 200px;
+    height: 200px;
+}
+.kotak-bawah, .kotak-atas{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 536px;
+}
+.kotak-atas{
+    background-color: #FFF5CF;
+    border-radius: 40px 40px 0 0;
+    height: 258px;
+    flex-direction: column;
+}
+.kotak-bawah{
+    background-color: #FFFFFF;
+    border-radius: 0 0 40px 40px;
+    height: 458px;
+}
+.bar-1, .bar-2, .hover-icon{
+    font-size: 72px;
+    font-weight: 700;
+    color: rgb(19, 39, 53);
+}
+.hover-icon{
+    width: 300px;
+    height: 300px;
+}
+/* ------ champion prize ------- */
 .timeline{
     display: flex;
+    flex-direction: column;
     height: 100vh;
     justify-content: center;
     align-items: center;
@@ -203,32 +348,136 @@ a{
     text-shadow: 0 0 7px white, 0 0 35px rgb(0, 255, 213);
 }
 /* -------- timeline ---------- */
-.champss{
-    height: 100vh;
+
+.faqq, .sponsor, .medpar{
+    height: 130vh;
 }
-/* ------ champion prize ------- */
-.aboutt{
-    height: 100vh;
+.questions{
+    display: flex;
 }
-.btnreg{
-    color: black;
-    font-size: 36px;
+.question-kiri, .question-kanan{
+    display: flex;
+    flex-direction: column;
+}
+.platinum, .gold, .silver{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+.platinum, .gold{
+    display: none;
+}
+.log-atas, .log-bawah{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.log-atas{
+    margin-bottom: 20px;
+}
+.logogold1{
+    width: 104px;
+    height: 132px;
+}
+.logogold2{
+    width: 187px;
+    height: 187px;
+}
+.logogold3{
+    width: 360px;
+    height: 85px;
+}
+.bg{
+    width: 1000px;
+    height: 800px;
+}
+.sps{
+    font-size: 64px;
     font-weight: 700;
-    height: 80px;
-    width: 397px;
-    border-radius: 40px;
-    background: linear-gradient(90deg, #F9C80E, #F39200);
-    border: none;
 }
-.btnreg:hover{
-    cursor: pointer;
+.logoc{
+    width: 615px;
+    height: 418px;
 }
-.pointerline{
-    border: 5px solid #F39200;
-    width: 420px;
+.isinyaaa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-/* --------- about ------------ */
-.faqq{
-    height: 100vh;
+.dalem-kandang{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 60%;
 }
 /* ---------- FAQ ------------- */
+.footernya{
+    height: 220vh;
+    background-color: #FFF5CF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.kepala-footer{
+    font-size: 72px;
+    font-weight: 700;
+    color: black;
+}
+.atas, .bawah{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.lg2{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.garis{
+    height: 300px;
+    width: 5px;
+    background-color: black;
+}
+.logomedsos{
+    width: 100px;
+    height: 100px;
+}
+.twt{
+    width: 120px;
+    height: 100px;
+}
+.logoo{
+    width: 342px;
+    height: 99px;
+}
+.logop{
+    width: 305px;
+    height: 291px;
+}
+.op-judul{
+    font-size: 72px;
+    font-weight: 600;
+    color: black;
+}
+.organized-powered, .logo-logo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.logo-logo{
+    align-items: center;
+}
+.kakinya{
+    color: black;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+/* ---------- FOOTER ------------- */

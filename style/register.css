@@ -8,6 +8,7 @@
 body{
     background-image: url(../assets/background-login.png);
     background-repeat: repeat-y;
+    background-size: cover;
 }
 .title{
     font-size: 64px;
