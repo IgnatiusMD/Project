@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline</title>
+
+      <!-- link css -->
+      <link rel="stylesheet" href="../style/participantspanel.timeline.css">
+
+      <!-- link font google -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+ 
+  <!-- link font awesome -->
+  <script src="https://kit.fontawesome.com/6f80ee10bd.js" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+
+    <div class="wrapper">
+        <section class="sidebar">
+         
+            <img src="../assets/logo.png" alt="">
+            <h2>Participants</h2>
+           
+            <ul>
+               <li><a href="../html/participantspanel.html"><i class="fas fa-chart-line"></i>Dashboard</a></li>
+               <li><a href="../html/participantspanel.payment.html"><i class="fas fa-wallet"></i>  Payment</a></li>
+               <li><a href="../html/participantspanel.timeline.html"> <i class="far fa-clock"></i> Timeline </a> </li>  
+               <li><a href="../html/participantspanel.logout.html"><i class="fas fa-sign-out-alt"></i>Log out</a></li>
+            </ul>
+
+        </section>
+
+        <section class="main-content">
+            <div class="header"><h3>Timeline</h3></div>
+            <section id="TL" class="timeline">
+           
+        
+                <div class="bawahnya">
+                    <div class="tl-kiri">
+                        <div class="tl-judul">
+                            <span class="tl-text">PICK A DATE</span>
+                        </div>
+                        <div class="tl-tgltgl">
+                            <div class="tl-pertama">
+                                <input class="tl-tombol open" type="radio" value="o" name="button"></input>
+                                <label>
+                                    <div class="tl-namajudul">
+                                        <span class="tl-up polos-ml">Open Registration</span>
+                                        <span class="tl-down solid-ml">2 August 2021</span>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="garis-penghubung1 ln"></div>
+                            <div class="tl-pertama">
+                                <input class="tl-tombol close" type="radio" value="c" name="button"></input>
+                                <label>
+                                    <div class="tl-namajudul">
+                                        <span class="tl-up polos-ml">Close Registration</span>
+                                        <span class="tl-down solid-ml">12 September 2021</span>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="garis-penghubung2 ln"></div>
+                            <div class="tl-pertama">
+                                <input class="tl-tombol meeting" type="radio" value="m" name="button"></input>
+                                <label>
+                                    <div class="tl-namajudul">
+                                        <span class="tl-up polos-ml">Technical Meeting</span>
+                                        <span class="tl-down solid-ml">30 September 2021</span>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="garis-penghubung3 ln"></div>
+                            <div class="tl-pertama">
+                                <input class="tl-tombol competition" type="radio" value="cm" name="button"></input>
+                                <label>
+                                    <div class="tl-namajudul">
+                                        <span class="tl-up polos-ml">Competition Day</span>
+                                        <span class="tl-down solid-ml">10 October 2021</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tl-content">
+                        <div class="solid-l">HURRY UP!</div>
+                        <div class="itungo">
+                            <div class="countdown o" onclick="see(0)" id="demo">00 : 00 : 00 : 00</div>
+                        </div>
+                        <div class="itungc">
+                            <div class="countdown c" onclick="see(1)" id="demo1">00 : 00 : 00 : 00</div>
+                        </div>
+                        <div class="itungm">
+                            <div class="countdown m" onclick="see(2)" id="demo2">00 : 00 : 00 : 00</div>
+                        </div>
+                        <div class="itungcm">
+                            <div class="countdown cm" onclick="see(3)" id="demo3">00 : 00 : 00 : 00</div>
+                        </div>
+                    </div>
+                </div>
+        
+            </section>
+
+
+        
+    </section>
+
+
+</div>
+
+
+<script src="../js/tl.js"></script>
+<script src="../js/countdown.js"></script>
+
+
+    
+
+
+</body>
+</html>

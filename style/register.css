@@ -161,7 +161,7 @@ input:checked + .slider::before{
 /* TEST DISINI INPUT ANIMATION */
 .input-data{
     display: flex;
-    margin: 5px 0;
+    margin: 10px 0;
     height: 60px;
     width: 100%;
     position: relative;
@@ -170,8 +170,8 @@ input:checked + .slider::before{
     height: 100%;
     width: 100%;
     border: none;
-    padding-top: 28px;
-    font-size: 20px;
+    padding-top: 35px;
+    font-size: 17px;
     color: white;
     background: transparent;
     border-bottom: 2px solid white;
@@ -179,15 +179,16 @@ input:checked + .slider::before{
 .input-data input:focus ~ label,
 .input-data input:valid ~ label{
     transform: translateY(-20px);
-    font-size: 30px;
+    font-size: 20px;
     color: #F9C80E;
 }
 
 .input-data label{
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     left: 0;
     color: white;
+    font-size: 26px;
     pointer-events: none;
     transition: all 0.3s ease;
 }

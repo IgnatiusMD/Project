@@ -7,7 +7,10 @@
     font-weight: 600;
 }
 body{
-    background-color: black;
+    background-image: url(../assets/background-bd.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
     overflow-x: hidden;
 }
 a{
@@ -116,6 +119,9 @@ a{
 .heading, .unknown{
     z-index: 2;
 }
+.heading{
+    margin-top: 35px;
+}
 /* ----------- navbar ---------------- */
 .homee{
     display: flex;
@@ -205,11 +211,13 @@ a{
 }
 /* -------- home ---------- */
 .aboutt, .aboutt2{
-    height: 120vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding-left: 100px;
+}
+.aboutt{
+    height: 130vh;
 }
 .about-kotak{
     width: 100%;
@@ -267,7 +275,8 @@ a{
 }
 /* about1 */
 .aboutt2{
-    margin-top: 250px;
+    height: 140vh;
+    margin-top: 100px;
     align-items: center;
 }
 .swiper-slide{
@@ -301,7 +310,7 @@ a{
 }
 /* --------- about ------------ */
 .champss{
-    height: 110vh;
+    height: 140vh;
 }
 .kotakbaru{
     display: flex;
@@ -384,7 +393,7 @@ a{
 .timeline{
     display: flex;
     flex-direction: column;
-    height: 110vh;
+    height: 130vh;
 }
 .bawahnya{
     display: flex;
@@ -478,12 +487,99 @@ label{
     font-weight: 400;
     font-size: 92px;
 }
-/* -------- timeline ---------- */
-.faqq, .contactus{
-    height: 140vh;
+.faqq .heading {
+    margin-bottom: 50px;
 }
+.quesionanswer{
+    width: 100vh;
+    height: 150vh;
+    display: flex;
+    justify-content: space-around;
+}
+.accordion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0px;
+}
+.accordion .contentbX{
+    position: relative;
+}
+.accordion .contentbx .content{
+    position: relative;
+    height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.accordion .contentbx.activex .content{
+    height : 200px;
+    padding-left: 10px;
+}
+.tanya1, .tanya2, .tanya3, .tanya4, .tanya5, .tanya6, .tanya7, .tanya8, .tanya9{
+    cursor: pointer;
+}
+.tanya1{
+    width: 375px;
+    height: 120px;
+}
+.jawab1{
+    width: 300px;
+    height: 200px;
+}
+.jawab2{
+    width: 400px;
+    height: 150px;
+}
+.tanya2{
+    width: 375px;
+    height: 120px;
+}
+.tanya3{
+    position: relative; 
+    width: 375px;
+    height: 120px;
+    cursor: pointer;
+}
+.jawab3{
+    width: 500px;
+    height: 200px; 
+}
+.tanya4{
+    width: 400px;
+    height: 150px;
+    cursor: pointer;
+}
+.jawab4{
+    width: 400px;
+    height: 200px;  
+}
+.tanya5{
+    width: 400px;
+    height: 150px;
+}
+.jawab5{
+    width: 300px;
+    height: 200px;
+}
+.tanya6{
+    width: 400px;
+    height: 150px;
+}
+.jawab6{
+    width: 400px;
+    height: 200px;
+}
+.tanya7, .tanya8, .tanya9, .tanya19, .tanya20{
+    width: 375px;
+    height: 175px;
+}
+.jawab7, .tanya8, .jawab8, .jawab9{
+    width: 400px;
+    height: 200px;
+}
+/* -------- timeline ---------- */
 .sponsor, .medpar{
-    height: 125vh;
+    height: 145vh;
 }
 .sponsor, .medpar{
     width: 100%;
@@ -624,6 +720,83 @@ label{
 }
 .sejajar{
     display: flex;
+}
+
+/* ------ contact form --------- */
+.contactus{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    height: 135vh;
+}
+.any-question{
+    display: flex;
+    flex-direction: column;
+}
+.sejajar{
+    display: flex;
+}
+.contact-us-form{
+    display: flex;
+    flex-direction: column;
+}
+.title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 90px;
+    background-image: linear-gradient(90deg, #F9C80E, #F39200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.contact-us-form{
+    display: flex;
+    flex-direction: column;
+}
+.contact-us-form label{
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.contact-us-form input{
+    width: 450px;
+    height: 60px;
+    background-color:#FFF9E1;
+    border-radius: 25px;
+    border: none;
+    margin-bottom: 20px;
+    color: black;
+    font-size: 20px;
+    padding-left: 30px;
+}
+::placeholder{
+    color: rgba(0, 0, 0, 0.35);
+    font-size : 20px;
+}
+.contact-us-form textarea{
+    background-color: #FFF9E1;
+    border:none;
+    border-radius: 30px;
+}
+.btn{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+.submit-btn{
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(213.91deg, #F39200 -4.55%, #F9C80E 79.9%);
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+}
+.submit-btn:hover{
+    cursor: pointer;
 }
 /* ---------- FAQ ------------- */
 .footernya{
