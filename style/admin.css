@@ -254,6 +254,7 @@ margin-bottom: 10px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
+    margin-top: 150px;
    
     background: #fff;
     width: 500px;

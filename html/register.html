@@ -13,7 +13,7 @@
         <a href="index.html"><img class="gambar" src="../assets/logo.png" alt="logo"></a>
     </div>
     <div class="formnya">
-        <form action="" class="inside">
+        <form action="" class="inside" id="form">
             <div class="heading">
                 Let's Start Your Adventure!
             </div>
@@ -25,15 +25,16 @@
                         Group Information
                     </span>
                 </div>
-
+                
                 <div class="input-data">
                     <input type="text" required>
                     <div class="underline"></div>
                     <label class="what-is">Group Name</label>
                 </div>
                 <div class="input-data">
-                    <input type="password" required>
+                    <input type="password" id="password" required>
                     <div class="underline"></div>
+                    <span id="errorpass"></span>
                     <label class="what-is">Password</label>
                 </div>
                 <div class="info">
@@ -72,7 +73,7 @@
                     <label class="what-is">Email</label>
                 </div>
                 <div class="input-data">
-                    <input type="phone" required>
+                    <input type="tel" required>
                     <div class="underline"></div>
                     <label class="what-is">WA Number</label>
                 </div>
@@ -134,7 +135,7 @@
             </div>
 
             <div class="submit">
-                <button type="submit" class="btn">SUBMIT</button>
+              <a href="../html/login.html"> <button type="submit" class="btn" value="submit">SUBMIT</button></a> 
             </div>
         </form>
         <script src="../js/ifbinus.js"></script>
